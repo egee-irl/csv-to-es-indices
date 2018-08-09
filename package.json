@@ -1,0 +1,22 @@
+{
+  "name": "es_index",
+  "version": "0.1.0",
+  "description": "A simple script that indexes random data",
+  "main": "main.js",
+  "scripts": {
+    "start": "node dist/main.js",
+    "build": "npm run build-ts && npm run lint-ts",
+    "test": "jest --forceExit --coverage --verbose",
+    "build-ts": "tsc --build tsconfig.json",
+    "lint-ts": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "author": "egee",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^10.5.7",
+    "elasticsearch": "^15.1.1",
+    "fast-csv": "^2.4.1",
+    "ts-node": "^7.0.0",
+    "typescript": "^3.0.1"
+  }
+}
