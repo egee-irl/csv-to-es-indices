@@ -1,6 +1,6 @@
 {
     "es_host": "https://search-eg-cluster-44ixoq4bigmmkxfr6akgx2qe3m.us-west-2.es.amazonaws.com/",
-    "index_name": "helloworld",
-    "type_name": "thing",
+    "index_name": "airlines",
+    "type_name": "mytype",
     "csv_path": "1987.csv"
 }
