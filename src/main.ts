@@ -2,12 +2,14 @@ import * as elasticsearch from "elasticsearch";
 import * as fs from "fs";
 import csv from "fast-csv";
 
-const index_name = "helloworld";
-const type_name = "thing";
-const csv_path = "1987.csv";
+const cfg = require("../config.json");
+
+const index_name = cfg.index_name;
+const type_name = cfg.type_name;
+const csv_path = cfg.csv_path;
 
 const client = new elasticsearch.Client({
-  host: "https://search-eg-cluster-44ixoq4bigmmkxfr6akgx2qe3m.us-west-2.es.amazonaws.com/",
+  host: cfg.es_host,
   log: "trace"
 });
 
