@@ -16,8 +16,6 @@
     "@types/elasticsearch": "^5.0.25",
     "@types/node": "^10.5.7",
     "elasticsearch": "^15.1.1",
-    "fast-csv": "^2.4.1",
-    "ts-node": "^7.0.0",
-    "typescript": "^3.0.1"
+    "fast-csv": "^2.4.1"
   }
 }
